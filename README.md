@@ -1,6 +1,6 @@
 # SwiftUIMindBlowing
 
-SwiftUIMindBlowing is a SwiftUI sample application that shows how to integrate [Tealeaf SDK](https://github.com/acoustic-analytics/Tealeaf) following [docs](https://developer.goacoustic.com/acoustic-exp-analytics/docs/get-started-add-the-ios-sdk-to-your-project).
+SwiftUIMindBlowing is a SwiftUI sample application that shows how to integrate [Connect SDK](https://github.com/go-acoustic/Connect) following [docs](https://developer.goacoustic.com/acoustic-exp-analytics/docs/get-started-add-the-ios-sdk-to-your-project).
 
 
 ## Getting Started
@@ -15,11 +15,11 @@ For SDK prerequisites and documentation, please refer to the SDK documentation [
 
 Clone the sample app code from git hub location
 
-`git clone https://github.com/acoustic-analytics/SwiftUIMindBlowing.git`
+`git clone https://github.com/go-acoustic/SampleCode_Connect_SwiftUI.git`
 
 Go to the sample app location
 
-`cd SwiftUIMindBlowing`
+`cd SampleCode_Connect_SwiftUI`
 
 Open Podfile in a text editor of your choice and note the following lines in the Podfile
 
@@ -27,17 +27,17 @@ Note that use_frameworks is uncommented
 
 `use_frameworks!`
 
-In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's release version
+In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's release version
 
-`pod 'Tealeaf'`
+`pod 'AcousticConnect'`
 
-In the respective targets for your project in the Podfile add the following line if you want to use Tealeaf SDK's debug version
+In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's debug version
 
-`pod 'TealeafDebug'`
+`pod 'AcousticConnectDebug'`
 
-You will notice that by default the sample application uses `pod 'TealeafDebug'`
+You will notice that by default the sample application uses `pod 'AcousticConnectDebug'`
 
-**Note** that you can use only one of `pod 'Tealeaf'` or `pod 'TealeafDebug'`. Do not use both at the same time.
+**Note** that you can use only one of `pod 'AcousticConnect'` or `pod 'AcousticConnectDebug'`. Do not use both at the same time.
 
 Now you need to install the pods by running one of the following commands.
 
@@ -53,9 +53,9 @@ Open `SwiftUIMindBlowing.xcworkspace` file and not the `SwiftUIMindBlowing.xcode
 
 ## Troubleshooting
 
-If you are using Debug version of Tealeaf SDK. i.e. `pod 'TealeafDebug'` , then you may edit your project's scheme in XCode and add environmental variable `EODebug` and set its value to 1; also add environmental variable `TLF_DEBUG` and set its value to 1. This will make the SDK to start writing debug logs to your xcode console window. If and when you want to report issues, the Tealeaf support engineers will ask you for these logs.
+If you are using Debug version of Connect SDK. i.e. `pod 'AcousticConnectDebug'` , then you may edit your project's scheme in XCode and add environmental variable `EODebug` and set its value to 1; also add environmental variable `CONNECT_DEBUG` and set its value to 1. This will make the SDK to start writing debug logs to your xcode console window. If and when you want to report issues, the Connect support engineers will ask you for these logs.
 
-![Step 1](https://github.com/acoustic-analytics/SwiftUIMindBlowing/blob/main/readme_stuff/environment_variables.png?raw=true)
+![Step 1](https://github.com/go-acoustic/SampleCode_Connect_SwiftUI/blob/main/readme_stuff/environment_variables.png?raw=true)
 
 ***
 
