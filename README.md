@@ -14,39 +14,35 @@ For SDK prerequisites and documentation, please refer to the SDK documentation [
 ### Installing
 
 Clone the sample app code from git hub location
-
-`git clone https://github.com/go-acoustic/SampleCode_Connect_SwiftUI.git`
-
+```
+git clone https://github.com/go-acoustic/SampleCode_Connect_SwiftUI.git
+```
 Go to the sample app location
-
-`cd SampleCode_Connect_SwiftUI`
-
+```
+cd SampleCode_Connect_SwiftUI
+```
 Open Podfile in a text editor of your choice and note the following lines in the Podfile
 
-Note that use_frameworks is uncommented
-
-`use_frameworks!`
-
 In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's release version
-
-`pod 'AcousticConnect'`
-
+```
+pod 'AcousticConnect'
+```
 In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's debug version
-
-`pod 'AcousticConnectDebug'`
-
+```
+pod 'AcousticConnectDebug'
+```
 You will notice that by default the sample application uses `pod 'AcousticConnectDebug'`
 
 **Note** that you can use only one of `pod 'AcousticConnect'` or `pod 'AcousticConnectDebug'`. Do not use both at the same time.
 
 Now you need to install the pods by running one of the following commands.
-
-`pod install`
-
-or to update
-
-`pod update`
-
+```
+pod install
+```
+or to update which forces to get latest
+```
+pod update
+```
 Above pod command (install or update) should complete with no errors. If you do see errors run the same command with `--verbose` option and share the error log with us.
 
 Open `SwiftUIMindBlowing.xcworkspace` file and not the `SwiftUIMindBlowing.xcodeproj` file. Once you open the workspace file, please use target CXA to build the sample app and run it. There are multiple targets in the project however the only one that serves for this example is the SwiftUIMindBlowing target.
