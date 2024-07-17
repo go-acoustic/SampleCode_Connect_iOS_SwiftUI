@@ -3,15 +3,40 @@
 SwiftUIMindBlowing is a SwiftUI sample application that shows how to integrate [Connect SDK](https://github.com/go-acoustic/Connect) following [docs](https://developer.goacoustic.com/acoustic-exp-analytics/docs/get-started-add-the-ios-sdk-to-your-project).
 
 
-## Getting Started for Carthage
+## Getting Started for Swift Packages
 
 ### Prerequisites
 
-You need to have recent carthage version install on your Mac OS. Current version is 0.36.0. [Please refer to carthage website for the details](https://github.com/Carthage/Carthage).
+You just need xcode.
 
-For SDK prerequisites and documentation, please refer to the SDK documentation [here](https://developer.goacoustic.com/acoustic-exp-analytics/docs/get-started-add-the-ios-sdk-to-your-project)
+## Updating xcode project
 
-### Installing
+### You will need to open the project and add the Package Dependencies
+![](https://github.com/go-acoustic/SampleCode_AcousticMobilePush_iOS_ObjC/blob/main_swift_package/readMeImages/xcode_package_dependencies.png?raw=true)
+
+1. Select `PROJECT`
+2. Select `Package Dependencies`
+3. And Swift Package by selecting the `+` button
+
+### Find swift package
+![](https://github.com/go-acoustic/SampleCode_AcousticMobilePush_iOS_ObjC/blob/main_swift_package/readMeImages/xcode_swift_packages_from_github.png?raw=true)
+
+- Add url of swift package
+- For debug use:
+  - https://github.com/go-acoustic/ConnectDebug-SP
+- For release use:
+  - https://github.com/go-acoustic/Connect-SP
+
+### Select target to add the swift package
+![](https://github.com/go-acoustic/SampleCode_AcousticMobilePush_iOS_ObjC/blob/main_swift_package/readMeImages/xcode_swift_packages_select_target.png?raw=true)
+
+### Displays swift package linked in target selected in prior step
+![](https://github.com/go-acoustic/SampleCode_AcousticMobilePush_iOS_ObjC/blob/main_swift_package/readMeImages/xcode_swift_packages_add_to_target.png?raw=true)
+
+### Project will display `Swift Packages` available for use
+![](https://github.com/go-acoustic/SampleCode_AcousticMobilePush_iOS_ObjC/blob/main_swift_package/readMeImages/xcode_swift_packages_add_to_project.png?raw=true)
+
+## Run Sample Application
 
 Clone the sample app code from git hub location
 ```
@@ -21,34 +46,13 @@ Go to the sample app location
 ```
 cd SampleCode_Connect_SwiftUI
 ```
-Open Cartfile in a text editor of your choice and note the following lines:
+The default for SampleCode_Connect_SwiftUI is the debug version of the Connect library. You would need to update to switch to test against release version.
 
-In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's release version
-```
-binary "https://raw.githubusercontent.com/go-acoustic/EOCore/master/EOCore.json" >= 2.3.273
-binary "https://raw.githubusercontent.com/go-acoustic/Tealeaf/master/Tealeaf.json" >= 10.6.288
-binary "https://raw.githubusercontent.com/go-acoustic/Connect/master/Connect.json" >= 1.0.16
-```
-
-In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's debug version
-```
-binary "https://raw.githubusercontent.com/go-acoustic/EOCore/master/EOCoreDebug.json" >= 2.3.273
-binary "https://raw.githubusercontent.com/go-acoustic/Tealeaf/master/TealeafDebug.json" >= 10.6.288
-binary "https://raw.githubusercontent.com/go-acoustic/Connect/master/ConnectDebug.json" >= 1.0.16
-```
-You will notice that by default the sample application uses `Debug` version of libraries.
-
-Note that you can use only one of  `Release` or `Debug`. Do not use both at the same time.
-
-Now you need to install the carthage by running the following command.
-```
-carthage update --use-xcframeworks
-```
-Above carthage command should complete with no errors.
+Note that you can use only one of `Release` or `Debug`. Do not use both at the same time.
 
 ## Troubleshooting
 
-If you are using Debug version of Connect SDK. i.e. `pod 'AcousticConnectDebug'` , then you may edit your project's scheme in XCode and add environmental variable `EODebug` and set its value to 1; also add environmental variable `CONNECT_DEBUG` and set its value to 1. This will make the SDK to start writing debug logs to your xcode console window. If and when you want to report issues, the Connect support engineers will ask you for these logs.
+If you are using Debug version of Connect SDK, then you may edit your project's scheme in XCode and add environmental variable `EODebug` and set its value to 1; also add environmental variable `CONNECT_DEBUG` and set its value to 1. This will make the SDK to start writing debug logs to your xcode console window. If and when you want to report issues, the Connect support engineers will ask you for these logs.
 
 ![Step 1](https://github.com/go-acoustic/SampleCode_Connect_SwiftUI/blob/main/readme_stuff/environment_variables.png?raw=true)
 

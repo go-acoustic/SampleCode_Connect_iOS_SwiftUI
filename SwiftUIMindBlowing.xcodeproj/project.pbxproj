@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,13 +18,7 @@
 		6D19F5D4293ED41D0082F42C /* AssertionFailureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D3293ED41D0082F42C /* AssertionFailureDemoView.swift */; };
 		6D19F5D7293ED43C0082F42C /* PreconditionFailureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D6293ED43C0082F42C /* PreconditionFailureDemoView.swift */; };
 		6D19F5DA293ED4A10082F42C /* FatalErrorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D9293ED4A10082F42C /* FatalErrorDemoView.swift */; };
-		6DB706FC2C474C7F0095B27B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 6DB706FB2C474C7F0095B27B /* Cartfile */; };
-		6DB707012C475A200095B27B /* Tealeaf.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DB706FE2C475A200095B27B /* Tealeaf.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DB707022C475A200095B27B /* EOCore.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DB706FF2C475A200095B27B /* EOCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DB707032C475A200095B27B /* Connect.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DB707002C475A200095B27B /* Connect.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6DB707052C475A450095B27B /* Connect.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB707002C475A200095B27B /* Connect.xcframework */; };
-		6DB707062C475A450095B27B /* EOCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB706FF2C475A200095B27B /* EOCore.xcframework */; };
-		6DB707072C475A450095B27B /* Tealeaf.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB706FE2C475A200095B27B /* Tealeaf.xcframework */; };
+		6DB707852C47A2DB0095B27B /* Connect in Frameworks */ = {isa = PBXBuildFile; productRef = 6DB707842C47A2DB0095B27B /* Connect */; };
 		7F337C9224AEF68A004ED5CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F337C9124AEF68A004ED5CE /* Constants.swift */; };
 		7FC5FD6024B1FB2600BF4464 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5FD5F24B1FB2600BF4464 /* View+Extensions.swift */; };
 		7FC5FD6424B2046B00BF4464 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC5FD6324B2046B00BF4464 /* MainView.swift */; };
@@ -164,21 +158,6 @@
 		F6F92B3D236304C5000CCC4D /* NavigationBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F92B3C236304C5000CCC4D /* NavigationBarButtonView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		6DB706FD2C4759DD0095B27B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				6DB707012C475A200095B27B /* Tealeaf.xcframework in CopyFiles */,
-				6DB707022C475A200095B27B /* EOCore.xcframework in CopyFiles */,
-				6DB707032C475A200095B27B /* Connect.xcframework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		6D19F4F22926F0350082F42C /* TLAssertUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLAssertUtil.swift; sourceTree = "<group>"; };
 		6D19F5BE293ED1170082F42C /* AssertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertView.swift; sourceTree = "<group>"; };
@@ -191,10 +170,6 @@
 		6D19F5D3293ED41D0082F42C /* AssertionFailureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionFailureDemoView.swift; sourceTree = "<group>"; };
 		6D19F5D6293ED43C0082F42C /* PreconditionFailureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreconditionFailureDemoView.swift; sourceTree = "<group>"; };
 		6D19F5D9293ED4A10082F42C /* FatalErrorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatalErrorDemoView.swift; sourceTree = "<group>"; };
-		6DB706FB2C474C7F0095B27B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		6DB706FE2C475A200095B27B /* Tealeaf.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:QXQ67VKX2B:Acoustic, L.P."; lastKnownFileType = wrapper.xcframework; name = Tealeaf.xcframework; path = Carthage/Build/Tealeaf.xcframework; sourceTree = "<group>"; };
-		6DB706FF2C475A200095B27B /* EOCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:QXQ67VKX2B:Acoustic, L.P."; lastKnownFileType = wrapper.xcframework; name = EOCore.xcframework; path = Carthage/Build/EOCore.xcframework; sourceTree = "<group>"; };
-		6DB707002C475A200095B27B /* Connect.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:QXQ67VKX2B:Acoustic, L.P."; lastKnownFileType = wrapper.xcframework; name = Connect.xcframework; path = Carthage/Build/Connect.xcframework; sourceTree = "<group>"; };
 		7F337C9124AEF68A004ED5CE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7FC5FD5F24B1FB2600BF4464 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		7FC5FD6324B2046B00BF4464 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -343,9 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB707052C475A450095B27B /* Connect.xcframework in Frameworks */,
-				6DB707062C475A450095B27B /* EOCore.xcframework in Frameworks */,
-				6DB707072C475A450095B27B /* Tealeaf.xcframework in Frameworks */,
+				6DB707852C47A2DB0095B27B /* Connect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1047,9 +1020,6 @@
 		F6F47C7622BABEF7009E3C48 = {
 			isa = PBXGroup;
 			children = (
-				6DB707002C475A200095B27B /* Connect.xcframework */,
-				6DB706FF2C475A200095B27B /* EOCore.xcframework */,
-				6DB706FE2C475A200095B27B /* Tealeaf.xcframework */,
 				99A21261261D00FC00572036 /* PatchConnectSDK */,
 				F6F92B2323618BF7000CCC4D /* README.md */,
 				F6F47C8122BABEF7009E3C48 /* Sources */,
@@ -1084,7 +1054,6 @@
 				9915305E2613EEBE0097630F /* MyApplication.swift */,
 				991530612613EF570097630F /* main.swift */,
 				6D19F4F22926F0350082F42C /* TLAssertUtil.swift */,
-				6DB706FB2C474C7F0095B27B /* Cartfile */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -1127,13 +1096,15 @@
 				F6F47C7B22BABEF7009E3C48 /* Sources */,
 				F6F47C7C22BABEF7009E3C48 /* Frameworks */,
 				F6F47C7D22BABEF7009E3C48 /* Resources */,
-				6DB706FD2C4759DD0095B27B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SwiftUIMindBlowing;
+			packageProductDependencies = (
+				6DB707842C47A2DB0095B27B /* Connect */,
+			);
 			productName = SwiftUICookbook;
 			productReference = F6F47C7F22BABEF7009E3C48 /* SwiftUIMindBlowing.app */;
 			productType = "com.apple.product-type.application";
@@ -1163,6 +1134,9 @@
 				Base,
 			);
 			mainGroup = F6F47C7622BABEF7009E3C48;
+			packageReferences = (
+				6DB707832C47A2DB0095B27B /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */,
+			);
 			productRefGroup = F6F47C8022BABEF7009E3C48 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1177,7 +1151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB706FC2C474C7F0095B27B /* Cartfile in Resources */,
 				F6180F1E236A41C000C5354A /* error.html in Resources */,
 				F6F47C8F22BABEF8009E3C48 /* LaunchScreen.storyboard in Resources */,
 				99A21263261D014C00572036 /* ConnectLayoutConfig.json in Resources */,
@@ -1206,7 +1179,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Since pod has default layout, need to replace it with correct values for this application.\n#echo \"Update ConnectLayoutConfig.json from podfile download.\"\n#cp -f \"${PROJECT_DIR}/PatchConnectSDK/ConnectLayoutConfig.json\" \"${PODS_ROOT}/AcousticConnectDebug/SDKs/iOS/Debug/ConnectResources.bundle/ConnectLayoutConfig.json\"\n#echo \"Update ConnectAdvancedConfig.json from podfile download.\"\nsed -i \"\" 's/\\\"RemoveSwiftUIDuplicates\\\"\\: true/\\\"RemoveSwiftUIDuplicates\\\"\\: false/' \"Carthage/Build/Connect.xcframework/ios-arm64/Connect.framework/ConnectResources.bundle/ConnectAdvancedConfig.json\"\nsed -i \"\" 's/\\\"LogFullRequestResponsePayloads\\\"\\: false/\\\"LogFullRequestResponsePayloads\\\"\\: true/' \"Carthage/Build/Connect.xcframework/ios-arm64_x86_64-simulator/Connect.framework/ConnectResources.bundle/ConnectAdvancedConfig.json\"\n";
+			shellScript = "# Since pod has default layout, need to replace it with correct values for this application.\n#echo \"Update ConnectLayoutConfig.json from podfile download.\"\n#cp -f \"${PROJECT_DIR}/PatchConnectSDK/ConnectLayoutConfig.json\" \"${PODS_ROOT}/AcousticConnectDebug/SDKs/iOS/Debug/ConnectResources.bundle/ConnectLayoutConfig.json\"\n#echo \"Update ConnectAdvancedConfig.json from podfile download.\"\n#sed -i \"\" 's/\\\"RemoveSwiftUIDuplicates\\\"\\: true/\\\"RemoveSwiftUIDuplicates\\\"\\: false/' \"Carthage/Build/Connect.xcframework/ios-arm64/Connect.framework/ConnectResources.bundle/ConnectAdvancedConfig.json\"\n#sed -i \"\" 's/\\\"LogFullRequestResponsePayloads\\\"\\: false/\\\"LogFullRequestResponsePayloads\\\"\\: true/' \"Carthage/Build/Connect.xcframework/ios-arm64_x86_64-simulator/Connect.framework/ConnectResources.bundle/ConnectAdvancedConfig.json\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1571,6 +1544,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6DB707832C47A2DB0095B27B /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/go-acoustic/ConnectDebug-SP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6DB707842C47A2DB0095B27B /* Connect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6DB707832C47A2DB0095B27B /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */;
+			productName = Connect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6F47C7722BABEF7009E3C48 /* Project object */;
 }
