@@ -3,11 +3,11 @@
 SwiftUIMindBlowing is a SwiftUI sample application that shows how to integrate [Connect SDK](https://github.com/go-acoustic/Connect) following [docs](https://developer.goacoustic.com/acoustic-exp-analytics/docs/get-started-add-the-ios-sdk-to-your-project).
 
 
-## Getting Started
+## Getting Started for Carthage
 
 ### Prerequisites
 
-You need to have recent cocoapods version install on your Mac OS. Current version is 1.10.1. Please refer to [cocoapods](https://cocoapods.org) website for the details.
+You need to have recent carthage version install on your Mac OS. Current version is 0.36.0. [Please refer to carthage website for the details](https://github.com/Carthage/Carthage).
 
 For SDK prerequisites and documentation, please refer to the SDK documentation [here](https://developer.goacoustic.com/acoustic-exp-analytics/docs/get-started-add-the-ios-sdk-to-your-project)
 
@@ -21,31 +21,30 @@ Go to the sample app location
 ```
 cd SampleCode_Connect_SwiftUI
 ```
-Open Podfile in a text editor of your choice and note the following lines in the Podfile
+Open Cartfile in a text editor of your choice and note the following lines:
 
 In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's release version
 ```
-pod 'AcousticConnect'
+binary "https://raw.githubusercontent.com/go-acoustic/EOCore/master/EOCore.json" >= 2.3.273
+binary "https://raw.githubusercontent.com/go-acoustic/Tealeaf/master/Tealeaf.json" >= 10.6.288
+binary "https://raw.githubusercontent.com/go-acoustic/Connect/master/Connect.json" >= 1.0.16
 ```
+
 In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's debug version
 ```
-pod 'AcousticConnectDebug'
+binary "https://raw.githubusercontent.com/go-acoustic/EOCore/master/EOCoreDebug.json" >= 2.3.273
+binary "https://raw.githubusercontent.com/go-acoustic/Tealeaf/master/TealeafDebug.json" >= 10.6.288
+binary "https://raw.githubusercontent.com/go-acoustic/Connect/master/ConnectDebug.json" >= 1.0.16
 ```
-You will notice that by default the sample application uses `pod 'AcousticConnectDebug'`
+You will notice that by default the sample application uses `Debug` version of libraries.
 
-**Note** that you can use only one of `pod 'AcousticConnect'` or `pod 'AcousticConnectDebug'`. Do not use both at the same time.
+Note that you can use only one of  `Release` or `Debug`. Do not use both at the same time.
 
-Now you need to install the pods by running one of the following commands.
+Now you need to install the carthage by running the following command.
 ```
-pod install
+carthage update --use-xcframeworks
 ```
-or to update which forces to get latest
-```
-pod update
-```
-Above pod command (install or update) should complete with no errors. If you do see errors run the same command with `--verbose` option and share the error log with us.
-
-Open `SwiftUIMindBlowing.xcworkspace` file and not the `SwiftUIMindBlowing.xcodeproj` file. Once you open the workspace file, please use target CXA to build the sample app and run it. There are multiple targets in the project however the only one that serves for this example is the SwiftUIMindBlowing target.
+Above carthage command should complete with no errors.
 
 ## Troubleshooting
 
