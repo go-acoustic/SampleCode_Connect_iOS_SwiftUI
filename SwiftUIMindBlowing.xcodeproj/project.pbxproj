@@ -1092,7 +1092,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6F47C9322BABEF8009E3C48 /* Build configuration list for PBXNativeTarget "SwiftUIMindBlowing" */;
 			buildPhases = (
-				99A2126A261D020100572036 /* Run Script - Update TealeafLayoutConfig.json */,
 				F6F47C7B22BABEF7009E3C48 /* Sources */,
 				F6F47C7C22BABEF7009E3C48 /* Frameworks */,
 				F6F47C7D22BABEF7009E3C48 /* Resources */,
@@ -1161,27 +1160,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		99A2126A261D020100572036 /* Run Script - Update TealeafLayoutConfig.json */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script - Update TealeafLayoutConfig.json";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Since pod has default layout, need to replace it with correct values for this application.\n#echo \"Update ConnectLayoutConfig.json from podfile download.\"\n#cp -f \"${PROJECT_DIR}/PatchConnectSDK/ConnectLayoutConfig.json\" \"${PODS_ROOT}/AcousticConnectDebug/SDKs/iOS/Debug/ConnectResources.bundle/ConnectLayoutConfig.json\"\n#echo \"Update ConnectAdvancedConfig.json from podfile download.\"\n#sed -i \"\" 's/\\\"RemoveSwiftUIDuplicates\\\"\\: true/\\\"RemoveSwiftUIDuplicates\\\"\\: false/' \"Carthage/Build/Connect.xcframework/ios-arm64/Connect.framework/ConnectResources.bundle/ConnectAdvancedConfig.json\"\n#sed -i \"\" 's/\\\"LogFullRequestResponsePayloads\\\"\\: false/\\\"LogFullRequestResponsePayloads\\\"\\: true/' \"Carthage/Build/Connect.xcframework/ios-arm64_x86_64-simulator/Connect.framework/ConnectResources.bundle/ConnectAdvancedConfig.json\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6F47C7B22BABEF7009E3C48 /* Sources */ = {
