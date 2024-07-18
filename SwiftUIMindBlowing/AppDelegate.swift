@@ -3,7 +3,7 @@
 //
 
 import UIKit
-//import Tealeaf
+import Tealeaf
 import EOCore
 import Connect
 class AppDelegate: UIResponder, UIApplicationDelegate {
