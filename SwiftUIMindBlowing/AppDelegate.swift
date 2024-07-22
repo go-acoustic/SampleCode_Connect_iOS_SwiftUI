@@ -11,8 +11,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let connectApplicationHelperObj =  ConnectApplicationHelper()
         
         // Enable library to load configuration settings
-        let appKey:String = "https://lib-us-2.brilliantcollector.com/collector/collectorPost"
-        let postMessageURL:String = "b6c3709b7a4c479bb4b5a9fb8fec324c"
+        let appKey:String = "b6c3709b7a4c479bb4b5a9fb8fec324c"
+        let postMessageURL:String = "https://lib-us-2.brilliantcollector.com/collector/collectorPost"
         connectApplicationHelperObj.enableFramework(appKey, withPostMessageUrl: postMessageURL)
         
         // Read the new ConnectLayoutConfig settings
