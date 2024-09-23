@@ -14,7 +14,7 @@ struct SegmentedControlExampleDemoView: View {
         VStack {
             // Use binding to display value of array in a Text element
             Picker(selection: $index1, label: Text("UI Stack")) {
-                ForEach(0..<self.uiStacks.count) { index1 in
+                ForEach(0..<self.uiStacks.count, id: \.self) { index1 in
                     Text(self.uiStacks[index1]).tag(index1)
                 }
             }
@@ -26,7 +26,7 @@ struct SegmentedControlExampleDemoView: View {
 
             // Display custom view depending on the selected index of the SegmentedControl
             Picker(selection: $index2, label: Text("UI Stack")) {
-                ForEach(0..<uiStacks.count) { index2 in
+                ForEach(0..<uiStacks.count, id: \.self) { index2 in
                     Text(self.uiStacks[index2]).tag(index2)
                 }
             }

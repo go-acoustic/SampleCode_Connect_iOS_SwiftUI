@@ -12,7 +12,7 @@ extension Array {
     }
 }
 
-extension Array: Identifiable where Element: Identifiable {
+extension Array: @retroactive Identifiable where Element: Identifiable {
     public var id: String {
         return map({ "\($0.id)" }).joined(separator: ":")
     }
