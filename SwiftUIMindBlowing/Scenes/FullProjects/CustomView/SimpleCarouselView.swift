@@ -62,7 +62,7 @@ struct Carousel: View {
     var body: some View {
         GeometryReader() { geometry in
             HStack(alignment: .center, spacing: 0) {
-                ForEach(self.items.indices) { i in
+                ForEach(self.items.indices, id: \.self) { i in
                     Rectangle()
                         .frame(width: Item.width, height: Item.height)
                         .foregroundColor(self.items[i].color)
