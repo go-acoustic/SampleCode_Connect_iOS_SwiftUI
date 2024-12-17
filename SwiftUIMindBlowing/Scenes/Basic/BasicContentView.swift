@@ -10,6 +10,15 @@ struct BasicContentView: View {
         MainView(title: "Basic") {
             ModalPresenter() {
                 List {
+                    Section(header: Text("Signals")) {
+                        Group { // Group is used to overcome limitation of 10 Subviews in a ViewBuilder
+                            NavigationLink(destination: SignalDemoView()) {
+                                ExampleCellView(
+                                    title: "Behavioral Signal Types",
+                                    subtitle: "Call example signal types")
+                            }
+                        }
+                    }
                     Section(header: Text("Errors and Exceptions")) {
                         Group { // Group is used to overcome limitation of 10 Subviews in a ViewBuilder
                             NavigationLink(destination: AssertView()) {
