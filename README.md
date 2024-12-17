@@ -25,16 +25,16 @@ Open Cartfile in a text editor of your choice and note the following lines:
 
 In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's release version
 ```
-binary "https://raw.githubusercontent.com/go-acoustic/EOCore/master/EOCore.json" >= 2.3.273
-binary "https://raw.githubusercontent.com/go-acoustic/Tealeaf/master/Tealeaf.json" >= 10.6.288
-binary "https://raw.githubusercontent.com/go-acoustic/Connect/master/Connect.json" >= 1.0.16
+binary "https://raw.githubusercontent.com/go-acoustic/EOCore/master/EOCore.json" >= 2.3.307
+binary "https://raw.githubusercontent.com/go-acoustic/Tealeaf/master/Tealeaf.json" >= 10.6.317
+binary "https://raw.githubusercontent.com/go-acoustic/Connect/master/Connect.json" >= 1.0.47
 ```
 
 In the respective targets for your project in the Podfile add the following line if you want to use Connect SDK's debug version
 ```
-binary "https://raw.githubusercontent.com/go-acoustic/EOCore/master/EOCoreDebug.json" >= 2.3.273
-binary "https://raw.githubusercontent.com/go-acoustic/Tealeaf/master/TealeafDebug.json" >= 10.6.288
-binary "https://raw.githubusercontent.com/go-acoustic/Connect/master/ConnectDebug.json" >= 1.0.16
+binary "https://raw.githubusercontent.com/go-acoustic/EOCore/master/EOCoreDebug.json" >= 2.3.307
+binary "https://raw.githubusercontent.com/go-acoustic/Tealeaf/master/TealeafDebug.json" >= 10.6.317
+binary "https://raw.githubusercontent.com/go-acoustic/Connect/master/ConnectDebug.json" >= 1.0.47
 ```
 You will notice that by default the sample application uses `Debug` version of libraries.
 

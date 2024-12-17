@@ -18,6 +18,8 @@
 		6D19F5D4293ED41D0082F42C /* AssertionFailureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D3293ED41D0082F42C /* AssertionFailureDemoView.swift */; };
 		6D19F5D7293ED43C0082F42C /* PreconditionFailureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D6293ED43C0082F42C /* PreconditionFailureDemoView.swift */; };
 		6D19F5DA293ED4A10082F42C /* FatalErrorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D9293ED4A10082F42C /* FatalErrorDemoView.swift */; };
+		6D5CA41D2D4200B800794D58 /* SignalDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5CA41A2D4200B800794D58 /* SignalDemoView.swift */; };
+		6D5CA41E2D4200B800794D58 /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D5CA41B2D4200B800794D58 /* SignalView.swift */; };
 		6DB706FC2C474C7F0095B27B /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 6DB706FB2C474C7F0095B27B /* Cartfile */; };
 		6DB707012C475A200095B27B /* Tealeaf.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DB706FE2C475A200095B27B /* Tealeaf.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DB707022C475A200095B27B /* EOCore.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DB706FF2C475A200095B27B /* EOCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -191,6 +193,8 @@
 		6D19F5D3293ED41D0082F42C /* AssertionFailureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssertionFailureDemoView.swift; sourceTree = "<group>"; };
 		6D19F5D6293ED43C0082F42C /* PreconditionFailureDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreconditionFailureDemoView.swift; sourceTree = "<group>"; };
 		6D19F5D9293ED4A10082F42C /* FatalErrorDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatalErrorDemoView.swift; sourceTree = "<group>"; };
+		6D5CA41A2D4200B800794D58 /* SignalDemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalDemoView.swift; sourceTree = "<group>"; };
+		6D5CA41B2D4200B800794D58 /* SignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalView.swift; sourceTree = "<group>"; };
 		6DB706FB2C474C7F0095B27B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		6DB706FE2C475A200095B27B /* Tealeaf.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:QXQ67VKX2B:Acoustic, L.P."; lastKnownFileType = wrapper.xcframework; name = Tealeaf.xcframework; path = Carthage/Build/Tealeaf.xcframework; sourceTree = "<group>"; };
 		6DB706FF2C475A200095B27B /* EOCore.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:QXQ67VKX2B:Acoustic, L.P."; lastKnownFileType = wrapper.xcframework; name = EOCore.xcframework; path = Carthage/Build/EOCore.xcframework; sourceTree = "<group>"; };
@@ -367,6 +371,15 @@
 				6D19F5D9293ED4A10082F42C /* FatalErrorDemoView.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		6D5CA41C2D4200B800794D58 /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				6D5CA41A2D4200B800794D58 /* SignalDemoView.swift */,
+				6D5CA41B2D4200B800794D58 /* SignalView.swift */,
+			);
+			path = Signal;
 			sourceTree = "<group>";
 		};
 		6DB707042C475A450095B27B /* Frameworks */ = {
@@ -557,6 +570,7 @@
 		F67794A822BE3F7C005F1D0C /* ViewsAndControls */ = {
 			isa = PBXGroup;
 			children = (
+				6D5CA41C2D4200B800794D58 /* Signal */,
 				6D19F5AC293ED07F0082F42C /* Error */,
 				99931059270D32A800F759A0 /* ApiCall */,
 				99372B6B28171B7600612DE3 /* URLSessionDelegateGet */,
@@ -1274,6 +1288,8 @@
 				F67794E022BE3F7C005F1D0C /* NavigationLinkExampleView.swift in Sources */,
 				F6E5A99F236DACD300BC0852 /* ListExampleView.swift in Sources */,
 				F67794F122BE3F7C005F1D0C /* BasicContentView.swift in Sources */,
+				6D5CA41D2D4200B800794D58 /* SignalDemoView.swift in Sources */,
+				6D5CA41E2D4200B800794D58 /* SignalView.swift in Sources */,
 				7FC5FD6424B2046B00BF4464 /* MainView.swift in Sources */,
 				F6F47C8322BABEF7009E3C48 /* AppDelegate.swift in Sources */,
 				F67794DC22BE3F7C005F1D0C /* FontExampleView.swift in Sources */,
