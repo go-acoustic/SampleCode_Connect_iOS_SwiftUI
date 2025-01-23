@@ -18,7 +18,7 @@
 		6D19F5D4293ED41D0082F42C /* AssertionFailureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D3293ED41D0082F42C /* AssertionFailureDemoView.swift */; };
 		6D19F5D7293ED43C0082F42C /* PreconditionFailureDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D6293ED43C0082F42C /* PreconditionFailureDemoView.swift */; };
 		6D19F5DA293ED4A10082F42C /* FatalErrorDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D19F5D9293ED4A10082F42C /* FatalErrorDemoView.swift */; };
-		6DB707852C47A2DB0095B27B /* Connect in Frameworks */ = {isa = PBXBuildFile; productRef = 6DB707842C47A2DB0095B27B /* Connect */; };
+		6DB34C4A2D3B208700D6C9FE /* Connect in Frameworks */ = {isa = PBXBuildFile; productRef = 6DB34C492D3B208700D6C9FE /* Connect */; };
 		6DBF80B52D111DC200E240FC /* SignalDemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF80B22D111DC200E240FC /* SignalDemoView.swift */; };
 		6DBF80B62D111DC200E240FC /* SignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBF80B32D111DC200E240FC /* SignalView.swift */; };
 		7F337C9224AEF68A004ED5CE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F337C9124AEF68A004ED5CE /* Constants.swift */; };
@@ -322,7 +322,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB707852C47A2DB0095B27B /* Connect in Frameworks */,
+				6DB34C4A2D3B208700D6C9FE /* Connect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1116,7 +1116,7 @@
 			);
 			name = SwiftUIMindBlowing;
 			packageProductDependencies = (
-				6DB707842C47A2DB0095B27B /* Connect */,
+				6DB34C492D3B208700D6C9FE /* Connect */,
 			);
 			productName = SwiftUICookbook;
 			productReference = F6F47C7F22BABEF7009E3C48 /* SwiftUIMindBlowing.app */;
@@ -1148,7 +1148,7 @@
 			);
 			mainGroup = F6F47C7622BABEF7009E3C48;
 			packageReferences = (
-				6DB707832C47A2DB0095B27B /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */,
+				6DB34C482D3B208700D6C9FE /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */,
 			);
 			productRefGroup = F6F47C8022BABEF7009E3C48 /* Products */;
 			projectDirPath = "";
@@ -1540,20 +1540,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6DB707832C47A2DB0095B27B /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */ = {
+		6DB34C482D3B208700D6C9FE /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/go-acoustic/ConnectDebug-SP";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.4;
+				minimumVersion = 1.0.32;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6DB707842C47A2DB0095B27B /* Connect */ = {
+		6DB34C492D3B208700D6C9FE /* Connect */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6DB707832C47A2DB0095B27B /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */;
+			package = 6DB34C482D3B208700D6C9FE /* XCRemoteSwiftPackageReference "ConnectDebug-SP" */;
 			productName = Connect;
 		};
 /* End XCSwiftPackageProductDependency section */
