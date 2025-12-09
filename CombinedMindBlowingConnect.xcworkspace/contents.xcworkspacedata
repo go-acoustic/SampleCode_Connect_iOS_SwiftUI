@@ -5,9 +5,9 @@
       location = "group:SwiftUIMindBlowing.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Pods/Pods.xcodeproj">
+      location = "group:../iOS-SDK/iOSSrc/Connect/Connect.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:../iOS-SDK/iOSSrc/Connect/Connect.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

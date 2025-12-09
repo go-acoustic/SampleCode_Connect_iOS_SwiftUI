@@ -1,9 +1,63 @@
-# Uncomment the next line to define a global platform for your project
+# The source line is the same for both
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '14.0'
+
 workspace 'SwiftUIMindBlowing'
 
+# --- Project 1: SwiftUIMindBlowing ---
+# This project requires iOS 14.0
 target 'SwiftUIMindBlowing' do
-  use_frameworks!
+  platform :ios, '15.1' # Set platform specifically for this target
+  use_frameworks! :linkage => :dynamic # Use dynamic linkage for frameworks
   pod 'AcousticConnectDebug'
 end
+
+# uncomment if you have tests for SwiftUIMindBlowing
+## These targets require iOS 13.0
+#target 'Connect' do
+#  platform :ios, '13.0' # Set platform specifically for this target
+#  project '../iOS-SDK/iOSSrc/Connect/Connect.xcodeproj' # Explicit project path
+#  use_frameworks! :linkage => :dynamic
+#  pod 'TealeafDebug'
+#end
+#
+#target 'ConnectTestApp' do
+#  platform :ios, '13.0'
+#  project '../iOS-SDK/iOSSrc/Connect/Connect.xcodeproj' # Explicit project path
+#  use_frameworks! :linkage => :dynamic
+#  pod 'TealeafDebug'
+#end
+#
+#target 'ConnectTests' do
+#  platform :ios, '13.0'
+#  project '../iOS-SDK/iOSSrc/Connect/Connect.xcodeproj' # Explicit project path
+#  use_frameworks! :linkage => :dynamic
+#  pod 'TealeafDebug'
+#end
+#
+## --- Post Install Hook ---
+## This hook needs to iterate over all targets created by the installer
+#post_install do |installer|
+#  installer.pods_project.targets.each do |target|
+#    puts "Target: #{target.name}"
+#    
+#    # Logic for bundle product types (originally from Connect config)
+#    if target.respond_to?(:product_type) and target.product_type == "com.apple.product-type.bundle"
+#      target.build_configurations.each do |config|
+#        config.build_settings['CODE_SIGNING_ALLOWED'] = 'NO'
+#      end
+#    end
+#    
+#    # General build settings for all targets (originally from Connect config)
+#    target.build_configurations.each do |config|
+#      # Note: This will set IPHONEOS_DEPLOYMENT_TARGET to '13.0' for ALL pods,
+#      # which works fine since SwiftUIMindBlowing is 14.0 (a higher minimum is okay for pods).
+#      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+#      config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
+#      cflags = config.build_settings['OTHER_CFLAGS'] || ['$(inherited)']
+#      config.build_settings['OTHER_CFLAGS'] = cflags
+#    end
+#  end
+#end
+#
+#puts "Do not worry about warning: 'The Podfile contains framework or static library targets (Tealeaf)'"
+#
